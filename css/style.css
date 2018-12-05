@@ -50,19 +50,15 @@ h1 span:first-child {
 	background-color: #ffc000;
 	margin-top: 0px;
 }
-
   
 h2 {
 	display: block;
 	position: relative;
-	text-align: center;
 	z-index: 0;
-	margin-top: 125px;
 	margin: 0 auto;
-	width: 500px;
 	font-size: 33px;
-	line-height: 41px;
 	letter-spacing: 2px;
+	line-height: 41px;
 	color: #000000;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -96,7 +92,7 @@ h6 {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background: url(../img/bg_main1.png) no-repeat transparent;
+	background: url('../img/bg_main.png') no-repeat transparent;
 	background-size: cover;
 	background-position: 40%;
 }
@@ -109,14 +105,14 @@ h6 {
 }
 .logo {
 	padding-left: 30px;
-	margin-top: 34px;
+	margin-top: 25px;
 	display: flex;
 	flex: none;
 	align-items: center;
 }
 .nav {
 	padding-right: 30px;
-	margin-top: 47px;
+	margin-top: 35px;
 	display: flex;
 }
 .nav-itm {
@@ -147,6 +143,15 @@ h6 {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+}
+
+.tube {
+	display: none;
+	width:40px;
+	height: 40px;
+	margin-left: 10px;
+	background-image: url('../img/tube.png');
+	background-repeat: no-repeat;
 }
 
 .white {
@@ -187,6 +192,25 @@ p {
 	transition-duration: 0.5s;
 }
 
+.button span {
+	padding-left: 50px;
+}
+
+.button-little{
+	width: 245px;
+	height: 40px;
+	font-size: 12px;
+	background-color: #0089cf;
+	border-radius: 19px;
+}
+
+.button-add {
+	width: 195px;
+	height: 39px;
+	margin-bottom: 15px;
+	border-radius: 19px;
+	background-color: #e64327;
+}
 
 .p-text {
 	width: 750px;
@@ -216,6 +240,7 @@ input {
 	margin-bottom: 30px;
 	padding-left: 30px;
 	display: flex;
+	background-color: rgb(6, 34, 108, 10%);
 }
 
 .trigger {
@@ -243,11 +268,12 @@ input {
 
 .trigger img {
 	margin-bottom: 30px;
+	width: 101px;
 }
 
 fieldset {
 	width: 550px;
-	background-color: #06226c;
+	background-color: rgb(6, 34, 108, 50%);
 	padding-top: 45px;
 	padding-bottom: 25px;
 	margin-left: 30px;
@@ -278,62 +304,197 @@ fieldset img {
 	left: 80%;
 }
 
+.desc {
+	margin-top: 85px;
+	padding-bottom: 225px;
+	display: flex;
+	justify-content: center;
+	background: url('../img/bg_desc.png') no-repeat transparent;
+	background-size: auto;
+	background-position: 50% 100%;
+}
 
+.desc-text, .desc-list {
+	position: relative;
+	width: 530px;
+}
 
+.desc-list {
+	padding-top: 20px;
+}
 
+.desc-text p{
+	margin-top: 30px;
+	font-size: 19px;
+	line-height: 27px;
+	padding-left: 0;
+}
 
-/*_____________________MEDIA_________________________*/
+.desc-list li span{
+	margin-top: 20px;
+	font-size: 19px;
+	color: #000000;
+}
 
-
-
-@media screen and (max-width: 1440px) {
+.desc-list li{
+	color: #0f2775;
+	font-size: 20px;
 
 }
 
+.fastbuy {
+	background-color: #ffc000;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding-top: 80px;
+}
+
+.fastbuy-text {
+	max-width: 600px;
+}
+
+.fastbuy-pic {
+	margin-left: 170px;
+	margin-top: 20px;
+	padding-bottom: 0;
+}
+
+.fastbuy-text p {
+	width: 530px;
+	padding-left: 0;
+	margin-top: 25px;
+}
+
+.fastbuy-text ul {
+	padding-left: 30px;
+	margin-top: 25px;
+	
+}
+
+.fastbuy-text ul li span {
+	margin-top: 15px;
+	font-size: 19px;
+	line-height: 25px;
+}
+.fastbuy-text ul li  {
+	font-size: 30px;
+}
+
+.fastbuy fieldset {
+	margin-left: 0;
+}
+
+
+
+
+/*_____________________MEDIA_____________________________________________________________________________*/
+/*_______________________________________________________________________________________________________*/
+
+
+
+@media screen and (max-width: 1366px) {
+	.first-screen {
+		background-position: 60%;
+	}
+}
+
 @media screen and (max-width: 1270px)  {
+	.first-screen {
+	background: url(../img/bg_main750.png) no-repeat transparent;
+	background-position: 50% -10%;
+	}
+
 	.nav-itm {
 		display: none;
 	}
+	.tube {
+		display: flex;
+	}
 
 	h1 {
-		margin-top: 95px;
+		margin-top: 55px;
 		margin-bottom: 30px;
-		width: 550px;
+		width: 720px;
 		font-size: 45px;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		line-height: 50px;
+		padding-left: 15px;
 	}
 
 	p {
 		font-size: 17px;
 		line-height: 25px;
+		padding-left: 0;
+	}
+	.p-text {
+		width: 400px;
+		padding-left: 15px;
+	}
+	fieldset {
+		margin-left: 15px;
 	}
 	.header {
 		max-width: 750px;
 	}
 	.main {
 		max-width: 750px;
+		
 	}
 	.triggers {
+		padding: 0;
 		flex-direction: column;
 		margin-top: 55px;
+		align-items: center;
 	}
-
 	.trigger {
 		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-right: 0;
+		margin-top: 40px;
+	}
+	.trigger div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 	.trigger img {
-		padding-left: 0px;
+		margin-bottom: 20px;
+		
 	}
 	.trigger p {
-		padding-top: 15px;
-		padding-left: 30px;
-	}
+		padding: 0;
+		width: 440px;
 	
+	}
+	.trigger p:first-child {
+		padding: 0;
+		width: 440px;
+	}
+
+	.desc {
+		width: 100%;
+		flex-direction: column;
+		align-self: center;
+	}
+
+	.desc-text, .desc-list {
+		margin: 0 auto;
+	}
+
+	.desc ul {
+		margin-left: -20px;
+	}
+}	
 
 @media screen and (max-width: 749px)  {
 	.first-screen {
 		background-position: 40%;
+	}
+	.main {
+		max-width: 320px;
 	}
 	.logo {
 		padding-left: 15px;
@@ -345,11 +506,13 @@ fieldset img {
 		margin-top: 34px;
 		padding-right: 15px;
 	}
+	
+	
 
 	h1 {
 		padding-left: 15px;
-		margin-top: 65px;
-		margin-bottom: 25px;
+		margin-top: 35px;
+		margin-bottom: 10px;
 		width: 300px;
 		font-size: 25px;
 		letter-spacing: 1px;
@@ -357,54 +520,117 @@ fieldset img {
 	}
 
 	h2 {
-		width: 320px;
 		font-size: 21px;
-		line-height: 27px;
 		letter-spacing: 1px;
+		line-height: 27px;
 	}
-	
+
 	p {
 		padding-left: 15px;
 		font-size: 15px;
 		line-height: 21px;
 	}
+	.p-text {
+		width: 280px;
+		padding-left: 0;
+	}
 
+	fieldset {
+		width: 300px;
+		margin: 0;
+		border: none;
+		padding-top: 0;
+		margin-top: -60px;
+	}
+	
+	fieldset legend {
+		padding-top: 100px;
+		padding-bottom: 20px;
+		
+	}
+	fieldset legend p {
+		padding-left: 5px;
+	}
+	input {
+		margin-left: 5px;
+		width: 291px;
+		height: 37px;
+	}
 	.button {
 		font-size: 12px;
 		letter-spacing: 1px;
-		line-height: 26px;
-		width: 290px;
+		line-height: 15px;
+		width: 293px;
 		height: 49px;
-		margin-top: 30px;
+		border-radius: 24px;
+		margin-top: 0px;
+		margin-left: 5px;
+		padding: 0 20px 0 65px;
 	}
 
-	.main-text .button {
-		margin-left: 15px;
+	.button span {
+			padding-left: 40px;
 	}
+
+	img[src="img/fast_buy.png"] {
+		display: none;
+	  }
 
 	.triggers {
-		padding-left: 15px;
 		flex-direction: column;
-		margin-top: 30px;
-		margin-bottom: 100px;
+		margin-top: 100px;
+		margin-bottom: 60px;
 	}
 
 	.trigger {
 		max-width: 225px;
 		display: flex;
 		align-items: center;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
+		margin-top: 20px;
 	}
 
+	.trigger p:first-child {
+		width: 230px;
+		font-size: 15px;
+		line-height: 20px;
+	}
 	.trigger p {
-		font-size: 13px;
-		line-height: 15px;
+		width: 297px;
+		font-size: 14px;
+		line-height: 18px;
 	}
 
 	.trigger img {
 		width: 61px;
-		margin-bottom: 0;
+		margin-bottom: 10px;
 	}
+
+	.desc {
+		padding-left: 15px;
+		padding-right: 8px;
+	}
+	.desc-text, .desc-list {
+		position: relative;
+		width: 270px;
+	}
+	.desc-text p {
+		max-width: 270px;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.desc-list {
+		padding-top: 15px;
+	}
+	.desc-list li span {
+		max-width: 270px;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	
+
+
+
 }
 	
 	
