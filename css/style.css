@@ -172,6 +172,13 @@ p {
 	color: #000000;
 }
 
+img[src="img/fast_buy.png"] {
+	display: block;
+	position: absolute;
+	top: -8%;
+	left: 80%;
+  }
+
 .button{
 	text-decoration: none;
 	display: flex;
@@ -207,9 +214,16 @@ p {
 .button-add {
 	width: 195px;
 	height: 39px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	border-radius: 19px;
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: 16px;
 	background-color: #e64327;
+}
+
+.bg-blue {
+	background-color: #0089cf;
 }
 
 .p-text {
@@ -218,6 +232,11 @@ p {
 
 .button_orange{
 	background: linear-gradient(90deg, #e64327 0%, #ffc000 98%);
+}
+
+.button_blue{
+	background-image: linear-gradient(90deg, #0f2775 0%, #0051b5 50%, #02b3bb 100%);
+	width: 343px;
 }
 
 input {
@@ -234,6 +253,20 @@ input {
 	border: none;
 }
 
+textarea {
+	width: 430px;
+	height: 90px;
+	padding: 15px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #ebf0f6;
+	box-sizing: border-box;
+	padding-left: 25px;
+	outline: none;
+	border: none;
+	resize: none;
+}
 
 .triggers {
 	margin-top: 50px;
@@ -299,9 +332,12 @@ fieldset legend p {
 
 fieldset img {
 	display: block;
-	position: absolute;
-	top: -8%;
-	left: 80%;
+	
+}
+
+fieldset button img{
+	width: 20px;
+	padding-right: 15px;
 }
 
 .desc {
@@ -343,22 +379,24 @@ fieldset img {
 }
 
 .fastbuy {
-	background-color: #ffc000;
+	background: url('../img/bg_fastbuy.png') no-repeat #ffc000;
+	background-size: cover;
+	background-position: 50%;
 	display: flex;
-	justify-content: center;
-	align-items: flex-end;
+	flex-direction: column;
+	align-items: center;
 	padding-top: 80px;
+	padding-left: 15px;
+	
 }
 
 .fastbuy-text {
-	max-width: 600px;
+	width: 100%;
+	max-width: 1060px;
+	margin-bottom: 60px;
 }
 
-.fastbuy-pic {
-	margin-left: 170px;
-	margin-top: 20px;
-	padding-bottom: 0;
-}
+
 
 .fastbuy-text p {
 	width: 530px;
@@ -383,10 +421,280 @@ fieldset img {
 
 .fastbuy fieldset {
 	margin-left: 0;
+	padding-top: 25px;
+	background: none;
+	border-color: #0f2775;
+}
+
+.fastbuy fieldset legend p{
+	width: 472px;
+	margin-top: -5px;
+	padding-left: 15px;
+	color: #000000;
+}
+
+.garanties {
+	padding-top: 145px;
+	padding-bottom: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.garanties h2 {
+	max-width: 650px;
+	margin: 0;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1060px;
 }
 
 
+.garlists {
+	padding: 0;
+	display: flex;
 
+}
+
+.garlist {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 0;
+	margin-top: 70px;
+}
+
+.gar {
+	display: flex;
+	margin-bottom: 60px;
+
+}
+
+.gar div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.gar img {
+	width: 68px;
+	height: 68px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	
+}
+.gar p {
+	padding: 0;
+	width: 440px;
+	text-align: left;
+	line-height: 25px;
+
+
+}
+.gar p:first-child {
+	padding: 0;
+	width: 440px;
+	font-size: 19px;
+	line-height: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.discount {
+	background: url('../img/bg_discount.png') no-repeat #073e99;
+	background-size: cover;
+	background-position: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 80px;
+	padding-left: 15px;
+	padding-bottom: 80px;
+	
+}
+.discount h2 {
+	width: 765px;
+	margin: 0;
+	margin-bottom: 40px;
+	font-size: 33px;
+	line-height: 47px;
+	color: #ffffff;
+	font-weight: 700;
+	text-indent: 105px;
+}
+.discount-text {
+	width: 100%;
+	max-width: 1060px;
+	margin-bottom: 60px;
+	position: relative;
+}
+.discount10 {
+	position: absolute;
+	top: -81px;
+	left: 0;
+}
+
+.discount-text p {
+	width: 530px;
+	padding-left: 0;
+	margin-top: 25px;
+}
+
+.discount fieldset {
+	width: 500px;
+	margin-left: 0;
+	padding-top: 25px;
+	background: none;
+	border-color: #ffc000;
+}
+
+.testimonials {
+	margin-top: 85px;
+	padding-bottom: 110px;
+	display: flex;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+.testimonials h2 {
+	width: 300px;	
+	margin: 0;
+}
+
+.testimonials-text, .testimonials-tests {
+	position: relative;
+	width: 530px;
+}
+
+.testimonials-tests {
+	background: url('../img/bg_quotes.png') no-repeat #ffc000;
+	background-size: cover;
+	border-radius: 20px;
+	padding: 80px 55px;
+}
+
+.testimonials-text p{
+	margin-top: 30px;
+	font-size: 17px;
+	line-height: 27px;
+	padding-left: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.testimonials-tests p {
+	padding-left: 0;
+}
+
+.tests-author {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+}
+.tests-author p{
+	padding: 0 10px;
+	font-style: italic;;
+}
+
+.gratitudes {
+	padding: 65px 0 90px;
+	background-image: linear-gradient(56deg, #0f2775 0%, #0051b5 50%, #02b3bb 100%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.gratitudes h2 {
+	text-align: center;
+}
+
+.grat-letters {
+	width: 100%;
+	max-width: 1060px;
+	margin-top: 55px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.clients {
+	padding: 120px 0 310px;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.logos {
+	width: 1060px;
+	height: 300px;
+	margin-top: 60px;
+	background: url('../img/clients1920.png') no-repeat transparent;
+	background-size: cover;
+}
+
+.contacts {
+	height: 520px;
+	background-color: #ffc000;
+	display: flex;
+	justify-content: center;
+}
+
+.contacts-wrapper {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 950px;
+	height: 680px;
+	background: url('../img/bg_contacts.png') no-repeat transparent;
+	background-size: cover;
+	background-position: 100%;
+	margin-top: -160px;
+	padding: 170px 190px 170px 193px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+}
+
+.contacts-wrapper .big {
+	margin: 0;
+	padding: 0;
+	width: 649px;
+	font-size: 33px;
+	letter-spacing: 2px;
+	line-height: 41px;
+	color: #0f2775;
+	font-weight: 700;
+	text-align: center;
+}
+
+.contacts-wrapper .usual {
+	margin-top: 35px;
+	padding-left: 0;
+}
+
+.bg-yellow {
+	background-color: #ffc000
+}
+
+.go_top {
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	position: absolute;
+	right: -100px;
+	bottom: 50px;
+	background: url('../img/go_top.png') no-repeat transparent;
+	z-index: 5;
+}
+
+.crutch {
+	display: none;
+}
+.crutch-reverse {
+	display: inline;
+}
 
 /*_____________________MEDIA_____________________________________________________________________________*/
 /*_______________________________________________________________________________________________________*/
@@ -397,11 +705,12 @@ fieldset img {
 	.first-screen {
 		background-position: 60%;
 	}
+	
 }
 
 @media screen and (max-width: 1270px)  {
 	.first-screen {
-	background: url(../img/bg_main750.png) no-repeat transparent;
+	background: url('../img/bg_main750.png') no-repeat transparent;
 	background-position: 50% -10%;
 	}
 
@@ -427,6 +736,8 @@ fieldset img {
 		line-height: 25px;
 		padding-left: 0;
 	}
+	
+	
 	.p-text {
 		width: 400px;
 		padding-left: 15px;
@@ -487,6 +798,89 @@ fieldset img {
 	.desc ul {
 		margin-left: -20px;
 	}
+	.fastbuy-text p {
+		font-size: 19px;
+		line-height: 25px;	
+	}
+	.fastbuy fieldset {
+		width: 690px;
+	}
+	.fastbuy fieldset input, textarea {
+		width: 656px;
+	}
+	.garanties h2 {
+		margin: 0 auto;
+	}
+	.garlists {
+		flex-direction: column;
+	}
+
+	.garlist:last-child {
+		margin-top: 0;
+	}
+
+	.discount {
+		background-position: 25%;
+	}
+	.discount h2 {
+		width: 715px;
+		font-size: 31px;
+		letter-spacing: 2px;
+		line-height: 43px;
+	}
+	.discount fieldset {
+		width: 685px;
+		margin-left: 0;
+		padding-top: 25px;
+		background: none;
+		border-color: #ffc000;
+	}
+	.discount fieldset input, textarea {
+		width: 652px;
+	}
+
+	.testimonials {
+		flex-direction: column;
+		align-items: center;
+	}
+	.testimonials-text {
+		width: 715px;
+	}
+	.testimonials-tests {
+		width: 615px;
+	}
+	
+
+	.testimonials-text p{
+		width: 400px;
+		margin-top: 25px;
+		margin-bottom: 40px;
+	}
+	.grat-letters {
+		max-width: 720px;
+	}
+
+	.letter3 {
+		display: none;
+	}
+	.logos {
+		width: 720px;
+		background: url('../img/clients750.png') no-repeat transparent;
+	}
+
+	.contacts-wrapper {
+		background-position: 50% 50%;
+		
+	}
+	.contacts-wrapper .big {
+		width: 633px;
+		
+	}
+	.go_top {
+		display: none;
+	}
+	
+
 }	
 
 @media screen and (max-width: 749px)  {
@@ -506,8 +900,7 @@ fieldset img {
 		margin-top: 34px;
 		padding-right: 15px;
 	}
-	
-	
+		
 
 	h1 {
 		padding-left: 15px;
@@ -551,21 +944,26 @@ fieldset img {
 	fieldset legend p {
 		padding-left: 5px;
 	}
-	input {
+	.fastbuy fieldset input {
 		margin-left: 5px;
 		width: 291px;
 		height: 37px;
 	}
+	
 	.button {
 		font-size: 12px;
 		letter-spacing: 1px;
 		line-height: 15px;
-		width: 293px;
+		width: 290px;
 		height: 49px;
 		border-radius: 24px;
 		margin-top: 0px;
 		margin-left: 5px;
 		padding: 0 20px 0 65px;
+	}
+	input {
+		width: 290px;
+		margin-left: 0;
 	}
 
 	.button span {
@@ -574,7 +972,7 @@ fieldset img {
 
 	img[src="img/fast_buy.png"] {
 		display: none;
-	  }
+	}
 
 	.triggers {
 		flex-direction: column;
@@ -628,9 +1026,212 @@ fieldset img {
 		line-height: 20px;
 	}
 	
+	.fastbuy{ 
+		padding-top: 50px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.fastbuy-text {
+		max-width: 290px;
+	}
+	.fastbuy-text p {
+		width: 310px;
+		font-size: 15px;
+		line-height: 20px;
+	}
 
+	.fastbuy-text ul {
+		padding-left: 20px;
+	}
 
+	.fastbuy-text ul li {
+		font-size: 20px;
+	}
 
+	.fastbuy-text ul li span {
+		margin-top: 15px;
+		font-size: 15px;
+		line-height: 15px;
+	}
+	
+	.fastbuy fieldset {
+		width: 290px;
+		padding: 0;
+	}
+
+	.fastbuy fieldset textarea {
+		width: 291px;
+		padding: 10px;
+		margin-left: 0;
+	}
+
+	.fastbuy fieldset legend {
+		padding-top: 70px;
+		padding-right: 0;
+	}
+
+	.fastbuy fieldset legend p {
+		width: 280px;
+		padding-left: 0px;
+	}
+
+	.fastbuy fieldset .button {
+		padding: 0;
+	}
+
+	.fastbuy fieldset button img {
+		padding-right: 5px;
+	}
+
+	.button-add {
+		width: 156px;
+		height: 31px;
+		border-radius: 15px;
+		font-size: 10px;
+		letter-spacing: 1px;
+		line-height: 16px;
+	}
+	.wrapper {
+		max-width: 290px;
+		padding: 15px;
+	}
+	.garlist {
+		margin-top: 30px;
+	}
+	.gar {
+		margin-bottom: 10px;
+	}
+	.gar div {
+		align-items: flex-start;
+	}
+	.gar p {
+		width: auto;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.gar p:first-child {
+		width: auto;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.gar img {
+		width: 68px;
+		height: 68px;
+	}
+	.discount {
+		padding-left: 0;
+		padding-bottom: 20px;
+		
+	}
+	.discount-text {
+		margin-top: 40px;
+		margin-bottom: 0;
+	}
+	.discount .button {
+		padding: 0 15px 0 60px;
+	}
+	.discount .button-add {
+		width: 164px;
+		padding: 0 5px 0 8px;
+	}
+	fieldset button img {
+		padding-right: 5px;
+	}
+	.discount h2 {
+		width: 260px;
+		font-size: 17px;
+		letter-spacing: 1px;
+		line-height: 23px;
+		text-indent: 0;
+		margin-bottom: 60px;
+	}
+	.discount fieldset {
+		width: 270px;
+		margin-left: 0;
+		padding-top: 25px;
+		padding-left: 0;
+		background: none;
+		border-color: #ffc000;
+	}
+	.discount fieldset input {
+		width: 290px;
+		height: 37px;
+		margin-left: 0;
+	}
+	.discount10 {
+		position: absolute;
+		top: -136px;
+		left: 0;
+	}
+	.testimonials-text {
+		width: 290px;
+	}
+	.testimonials-tests {
+		padding: 70px 25px;
+		width: 250px;
+	}
+	.testimonials-text p{
+		width: 200px;
+		font-size: 17px;
+		letter-spacing: 1px;
+		line-height: 23px;
+	}
+	.testimonials-tests p{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.grat-letters {
+		max-width: 290px;
+	}
+
+	.letter2, .letter3 {
+		display: none;
+	}
+
+	.clients {
+		padding-bottom: 100px;
+	}
+
+	.clients p {
+		padding: 0;
+		margin-top: 30px;
+		text-align: center;
+	}
+	.logos {
+		width: 290px;
+		background: url('../img/clients320.png') no-repeat transparent;
+	}
+
+	.contacts {
+		height: auto;
+	}
+	.contacts-wrapper {
+		background: none;
+		background-color: #f7f9fd;
+		padding: 100px 15px 65px 15px;
+	}
+	
+	.contacts-wrapper .big {
+		width: 290px;
+		font-size: 21px;
+		letter-spacing: 1px;
+		line-height: 41px;
+		text-transform: uppercase;
+	}
+	
+	.contacts-wrapper .usual {
+		box-sizing: border-box;
+		text-align: center;
+		
+	}
+	.crutch {
+		display: inline;
+	}
+	.crutch-reverse {
+		display: none;
+	}
+
+	
 }
 	
 	
