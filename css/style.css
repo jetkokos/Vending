@@ -34,7 +34,7 @@ h1 {
 	padding-left: 30px;
 	width: 900px;
 	font-size: 55px;
-	line-height: 70px;
+	line-height: 60px;
 	letter-spacing: 1px;
 	color: #0f2775;
 	font-weight: 800;
@@ -45,6 +45,9 @@ h1 span {
 	display: inline-block;
 	background-color: #ffffff;
 	margin-top: 7px;
+	font-size: 55px;
+	letter-spacing: 1px;
+	line-height: 60px;
 }
 h1 span:first-child {
 	background-color: #ffc000;
@@ -196,11 +199,10 @@ img[src="img/fast_buy.png"] {
 	color: #ffffff;
 	font-weight: 700;
 	text-transform: uppercase;
-	transition-duration: 0.5s;
 }
 
 .button span {
-	padding-left: 50px;
+	padding-left: 20px;
 }
 
 .button-little{
@@ -218,7 +220,6 @@ img[src="img/fast_buy.png"] {
 	border-radius: 19px;
 	font-size: 10px;
 	letter-spacing: 1px;
-	line-height: 16px;
 	background-color: #e64327;
 }
 
@@ -246,11 +247,18 @@ input {
 	margin-left: 30px;
 	margin-bottom: 10px;
 	border-radius: 10px;
-	background-color: #ebf0f6;
+	background-color: #ffffff;
 	box-sizing: border-box;
 	padding-left: 25px;
 	outline: none;
 	border: none;
+}
+
+input::placeholder {
+	font-size: 17px;
+	line-height: 28px;
+	color: #707070;
+	font-family: "Roboto", Arial, sans-serif;
 }
 
 textarea {
@@ -260,12 +268,19 @@ textarea {
 	margin-left: 30px;
 	margin-bottom: 10px;
 	border-radius: 10px;
-	background-color: #ebf0f6;
+	background-color: #ffffff;
 	box-sizing: border-box;
 	padding-left: 25px;
 	outline: none;
 	border: none;
 	resize: none;
+}
+
+textarea::placeholder {
+	font-size: 17px;
+	line-height: 21px;
+	color: #707070;
+	font-family: "Roboto", Arial, sans-serif;
 }
 
 .triggers {
@@ -356,7 +371,7 @@ fieldset button img{
 }
 
 .desc-list {
-	padding-top: 20px;
+	padding-top: 55px;
 }
 
 .desc-text p{
@@ -461,6 +476,7 @@ fieldset button img{
 .garlist {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
 	margin-right: 0;
 	margin-top: 70px;
@@ -576,6 +592,7 @@ fieldset button img{
 }
 
 .testimonials-text p{
+	width: 420px;
 	margin-top: 30px;
 	font-size: 17px;
 	line-height: 27px;
@@ -626,6 +643,10 @@ fieldset button img{
 	flex-direction: column;
 	align-items: center;
 }
+
+.clients p {
+	padding: 0;
+}
 .logos {
 	width: 1060px;
 	height: 300px;
@@ -669,6 +690,9 @@ fieldset button img{
 	text-align: center;
 }
 
+.contacts-wrapper p {
+	padding: 0;
+}
 .contacts-wrapper .usual {
 	margin-top: 35px;
 	padding-left: 0;
@@ -693,8 +717,226 @@ fieldset button img{
 	display: none;
 }
 .crutch-reverse {
-	display: inline;
+	display: inline-block;
 }
+
+
+.footer {
+	background-color: #0f2775;
+	padding-top: 90px;
+	padding-bottom: 110px;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-wrapper{
+	display: flex;
+	justify-content: space-between;
+	width: 1150px;
+}
+
+.footer .logo {
+	margin-top: 0;
+	padding-left: 0;
+}
+
+.footer p {
+	margin-top: 30px;
+	padding-left: 0;
+	
+}
+
+.footer1 {
+	width: 700px;
+}
+.footer2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+}
+
+.footer2 p {
+	text-align: right;
+	font-size: 33px;
+	line-height: 32px;
+	font-weight: bold;
+}
+
+.footer .button-little {
+	margin: 0;
+}
+
+/*Popup styles*/
+.callBack {
+	visibility: hidden;
+}
+.popupSuccessCall {
+	visibility: hidden;
+}
+.popup {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 50;
+	opacity: 0;
+	transition: opacity 1s ease 0s;
+	overflow-y: scroll;
+}
+
+.overlay {
+	background-color: #000000;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0.5;
+	overflow: hidden;
+}
+.popup-container {
+	background: #ffffff;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 50px 40px 40px;
+	border-radius: 4px;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	z-index: 300;
+	
+}
+
+.popup-container h6 {
+	align-self: flex-start;
+	margin: 0;
+	font-size: 27px;
+	letter-spacing: 1px;
+	line-height: 35px;
+	color: rgb(0,0,0);
+	font-weight: 900;
+	margin-left: 10px;
+}
+
+.popup-container form {
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.popup-container input {
+	width: 425px;
+	height: 46px;
+	padding: 0;
+	margin: 0;
+	margin-top: ;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-image: linear-gradient(180deg, #dbe6f5 0%, #ffffff 100%);
+	border: 2px solid #b2c6df;
+	box-sizing: border-box;
+	padding-left: 15px;
+	outline: none;
+}
+
+.popup-container input:hover, .popup-container input:active {
+	border: 1px solid #1dd3bd;
+}
+
+.popup-container input:invalid:not(:placeholder-shown) {
+	border: 1px solid #e61535;
+}
+
+.popup-container .button {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 428px;
+	height: 61px;
+	border-radius: 30px;
+	background-image: linear-gradient(90deg, #e64327 0%, #ffc000 98%);
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 32px;
+	color: #ffffff;
+	font-weight: 800;
+	text-transform: uppercase;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	transition-duration: 0s;
+}
+
+.close {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 4%;
+	right: 4%;
+	font-size: 50px;
+	font-weight: 300;
+	background: none;
+	border: none;
+	outline: none;
+	width: 40px;
+	height: 40px;
+	color: #033787;
+	z-index: 10;
+}
+
+.close:hover {
+	cursor: pointer;
+	color: #1dd3bd;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+.popup_little_text {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	max-width: 365px;
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.popupSuccessDocs .popup_little_text {
+	margin-top: 75px;
+	text-align: center;
+}
+.popupSuccessCall .popup_little_text {
+	margin-top: 75px;
+	text-align: center;
+}
+
+.visible {
+	z-index: 100;
+	opacity: 1;
+	visibility: visible;
+}
+
+.form_warning{
+	padding-left: 15px;
+	margin-bottom: 15px;
+	font-size: 11px;
+	line-height: 12px;
+	color: rgb(231,22,54);	
+}
+
+
 
 /*_____________________MEDIA_____________________________________________________________________________*/
 /*_______________________________________________________________________________________________________*/
@@ -731,13 +973,17 @@ fieldset button img{
 		padding-left: 15px;
 	}
 
+	h1 span {
+		font-size: 45px;
+		letter-spacing: 1px;
+		line-height: 57px;
+	}
+
 	p {
 		font-size: 17px;
 		line-height: 25px;
 		padding-left: 0;
 	}
-	
-	
 	.p-text {
 		width: 400px;
 		padding-left: 15px;
@@ -879,13 +1125,42 @@ fieldset button img{
 	.go_top {
 		display: none;
 	}
+
+	.footer-wrapper {
+		width: 740px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer p {
+		text-align: center;
+	}
+	.footer1 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer2 {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.footer .button-little {
+		margin-top: 20px;
+	}
 	
 
 }	
 
 @media screen and (max-width: 749px)  {
 	.first-screen {
-		background-position: 40%;
+		background-position: 10%;
+	}
+	.fastbuy {
+		background-image: none;
+		background-color: #ffc000;
+	}
+	.discount {
+		background-image: linear-gradient(56deg, #0f2775 0%, #0051b5 50%, #02b3bb 100%);
 	}
 	.main {
 		max-width: 320px;
@@ -910,6 +1185,16 @@ fieldset button img{
 		font-size: 25px;
 		letter-spacing: 1px;
 		line-height: 33px;
+	}
+
+	h1 span {
+		max-width: 281px;
+		font-size: 45px;
+		letter-spacing: 1px;
+		line-height: 57px;
+		font-size: 33px;
+		letter-spacing: 1px;
+		line-height: 42px;
 	}
 
 	h2 {
@@ -967,7 +1252,7 @@ fieldset button img{
 	}
 
 	.button span {
-			padding-left: 40px;
+			padding-left: 20px;
 	}
 
 	img[src="img/fast_buy.png"] {
@@ -1089,7 +1374,6 @@ fieldset button img{
 		border-radius: 15px;
 		font-size: 10px;
 		letter-spacing: 1px;
-		line-height: 16px;
 	}
 	.wrapper {
 		max-width: 290px;
@@ -1129,10 +1413,12 @@ fieldset button img{
 	}
 	.discount .button {
 		padding: 0 15px 0 60px;
+		margin-left: 0;
 	}
 	.discount .button-add {
 		width: 164px;
 		padding: 0 5px 0 8px;
+		margin-left: 0;
 	}
 	fieldset button img {
 		padding-right: 5px;
@@ -1189,7 +1475,7 @@ fieldset button img{
 	}
 
 	.clients {
-		padding-bottom: 100px;
+		padding-bottom: 0;
 	}
 
 	.clients p {
@@ -1203,34 +1489,99 @@ fieldset button img{
 	}
 
 	.contacts {
+		background-color: #f7f9fd;
 		height: auto;
+		margin-top: 75px;
+		padding-bottom: 420px;
 	}
 	.contacts-wrapper {
+		height: auto;
 		background: none;
 		background-color: #f7f9fd;
-		padding: 100px 15px 65px 15px;
+		padding: 45px 15px 15px 15px;
+		margin: 0;
+		
 	}
 	
 	.contacts-wrapper .big {
-		width: 290px;
+		width: 315px;
 		font-size: 21px;
-		letter-spacing: 1px;
+		letter-spacing: 0.6px;
 		line-height: 41px;
 		text-transform: uppercase;
 	}
 	
 	.contacts-wrapper .usual {
+		display: flex;
+		flex-direction: column;
 		box-sizing: border-box;
 		text-align: center;
+		margin-top: 10px;
 		
 	}
 	.crutch {
-		display: inline;
+		display: block;
 	}
 	.crutch-reverse {
 		display: none;
 	}
+	.footer-wrapper {
+		width: 300px;
+	}
+	.footer {
+		padding-bottom: 60px;
+	}
+	.footer1 {
+		width: auto;
+	}
+	
 
+	.footer .button-little {
+		width: 200px;
+		height: 31px;
+		padding: 0;
+		font-size: 10px;
+		letter-spacing: 1px;
+		line-height: 16px;
+	}
+
+
+	.popup-container {
+		width: 300px;
+		padding: 20px 0;
+	}
+	.popup-container h6 {
+		font-size: 22px;
+		margin-left: 15px;
+		width: 300px;
+	}
+	.popup-container input {
+		width: 280px;
+	}
+	.popup-container .button {
+		width: 290px;
+		height: 47px;
+		padding-left: 16px;
+		padding-right: 16px;
+		display: inline;
+	}
+	.popup_little_text {
+		
+	}
+	
+	.close {
+		top: 10px;
+		right: 0px;
+		display: inline-block;
+		text-align: left;
+		line-height: 0;
+		border-radius: 0;
+		-webkit-appearance: none;
+	}
+	
+
+
+	
 	
 }
 	

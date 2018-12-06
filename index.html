@@ -11,14 +11,14 @@
 </head>
 <body>
 	<div class="main-container">
-		<div class="first-screen wow zoomOut">
+		<div id="navfirst" class="first-screen wow zoomOut">
 			<div class="header">
 				<a href="#" class="logo"><img src="img/logo.png"></a>
 				<nav class="nav">
 					<div class="nav-add">
 						<a href="#" class="nav-itm">+7 (495) 353-53-44</a>
-						<a href="#" class="nav-itm button button-little">Заказать обратный звонок</a>
-						<a href="#" class="tube"></a>
+						<a href="#" class="nav-itm button button-little callBack_ref">Заказать обратный звонок</a>
+						<a href="#" class="tube callBack_ref"></a>
 					</div>
 				</nav>
 			</div>
@@ -26,8 +26,10 @@
 				<div class="main-text white">
 					<h1>
 						<span class="wow slideInUp" data-wow-delay="0.1s">Выкуп</span>
-						<span class="wow slideInUp" data-wow-delay="0.3s" data-wow-duration="1s">платежного и банковского</span> 
-						<span class="wow slideInUp" data-wow-delay="0.3s" data-wow-duration="1s">оборудования</span> 
+						<span class="crutch wow slideInUp" data-wow-delay="0.3s" data-wow-duration="1s">платежного</span> 
+						<span class="crutch wow slideInUp" data-wow-delay="0.3s" data-wow-duration="1s">и банковского</span> 
+						<span class="crutch-reverse wow slideInUp" data-wow-delay="0.3s" data-wow-duration="1s">платежного и банковского</span> 
+						<span class="wow slideInUp" data-wow-delay="0.3s" data-wow-duration="1s">оборудования&nbsp;</span> 
 					</h1>
 					<div class=" p-text wow fadeInUp">
 						<p class="white"><span class="yellow">Купим в любом состоянии</span> платежные терминалы, банкоматы и банковское оборудование, многофункциональные терминалы,
@@ -41,7 +43,7 @@
 								</legend>
 								<input type="text" name="name" placeholder="Введите ваше имя">
 								<input type="tel" name="tel" placeholder="Введите ваш номер телефона">
-								<button class="button button_orange">Оставить заявку на срочный выкуп <span> >></span></button>
+								<button class="button button_orange callBack_ref">Оставить заявку на срочный выкуп <span> >></span></button>
 								<img src="img/fast_buy.png" alt="fast_buy">
 							</fieldset>
 						</form>
@@ -55,7 +57,6 @@
 							<p>Рассмотрим покупку любого количества терминалов, предложив самую выгодную цену</p>	
 						</div>
 					</div>
-					
 					<div class="trigger">
 						<img class="wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s" src="img/transport.png" alt="Add your service">
 						<div class="wow fadeInUp" data-wow-delay="0.5s">
@@ -111,7 +112,7 @@
 							<input type="text" name="name" placeholder="Введите ваше имя">
 							<input type="tel" name="tel" placeholder="Введите ваш номер телефона">
 							<button class="button button-add"><img src="img/paperclip.png" alt="paperclip">Прикрепить фото</button>
-							<button class="button button_blue">Оставить заявку на выкуп <span> >></span></button>
+							<button class="button button_blue callBack_ref">Оставить заявку на выкуп <span> >></span></button>
 						</fieldset>
 					</form>
 			</div>
@@ -185,7 +186,7 @@
 							<input type="text" name="name" placeholder="Введите ваше имя">
 							<input type="tel" name="tel" placeholder="Введите ваш номер телефона">
 							<button class="button button-add bg-blue"><img src="img/paperclip.png" alt="paperclip">Прикрепить фото</button>
-							<button class="button button_orange">Получить скидку 10% на наши услуги <span> >></span></button>
+							<button class="button button_orange callBack_ref">Получить скидку 10% на наши услуги <span> >></span></button>
 						</fieldset>
 					</form>
 				</div>
@@ -235,43 +236,57 @@
 				<p class="big">И наши специалисты ответят</p>
 				<p class="big">На любые интересующие</p>
 				<p class="big">Вас вопросы!</p>
-				<p class="usual">Звоните! 10:00 - 19:00 (без обеда и выходных)!</p>
+				<p class="usual">
+					<span>Звоните! 10:00 - 19:00</span>
+					<span>(без обеда и выходных)!</span>
+				</p>
 				<p>Работаем по Москве и области!</p>
-				<div class="go_top"></div>
+				<a href="#navfirst" class="go_top"></a>
 			</div>
-
 		</div>
 		<div class="footer">
-
-		</div>
-
-
-
-
-	</div>
-
-
-
-
-
-
-
-
-
-		
-		
-		
-		
-		<div id="navfooter" class="footer">
 			<div class="footer-wrapper">
-				
-				<a href="#navfirst" class="go_top"></a>		
+				<div class="footer-block footer1">
+						<a href="#" class="logo"><img src="img/logo.png"></a>
+						<p class="white">Купим в любом состоянии платежные терминалы, банкоматы и банковское оборудования, 
+							многофункциональные терминалы, вендинговое оборудование, информационные киоски, комплектующие!
+						</p>
+				</div>
+				<div class="footer-block footer2">
+					<a href="" class="button button-little callBack_ref">Заказать обратный звонок</a>
+					<p class="white">+7 (495) 353-53-44</p>
+				</div>
 			</div>
 		</div>
+	</div>
+<!--popups-->
+<div class="popup callBack">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button class="close">&times;</button>
+			<h6>Заказать</h6>
+			<h6>обратный звонок</h6>
+			<form class="form formCall">
+				<input type="text" name="name" placeholder="Ваше имя">
+				<span class="form_warning"></span>
+				<input type="tel" name="tel" placeholder="+7 (___) ___-__-__">
+				<span class="form_warning"></span>
+				<button name="submit" class="button button-gradient">Заказать обратный звонок</button>
+			</form>	
+			<p class="popup_little_text">Менеджер свяжется с вами в ближайшее время</p>	
+		</div>
+	</div>		
+	<div class="popup popupSuccessCall">
+		<div class="overlay"></div>
+		<div class="popup-container">
+			<button  class="close">&times;</button>
+			<p class="popup_little_text">Ваша заявка успешно отправлена.<br>Дождитесь звонка оператора.</p>	
+		</div>
+	</div>		
+		
+		
 
 	<script src="js/jquery-3.3.1.js"></script>
-	<script src="js/slick.min.js"></script>
 	<script src="js/wow.js"></script>
-	<script src="js/jquery.spincrement.js"></script>
 	<script src="js/script.js"></script>
 </html>
