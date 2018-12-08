@@ -74,7 +74,7 @@ h3 {
 	line-height: 21px;
 	letter-spacing: 1px;
 	color: #ffffff;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
@@ -120,19 +120,14 @@ h6 {
 }
 .nav-itm {
 	margin: 0 40px;
-	font-size: 15px;
-	line-height: 15px;
+	font-size: 25px;
+	line-height: 32px;
 	color: #ffffff;
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
   	transition: 0.5s;
-}
-.nav-itm:hover {
-	background-color: #1ed4be; 
-	transform: scale(1.2);
-	transition-duration: 0.5s;
 }
 
 .nav-add {
@@ -163,7 +158,7 @@ h6 {
 
 .yellow {
 	color: #ffc000;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 p {
@@ -178,8 +173,8 @@ p {
 img[src="img/fast_buy.png"] {
 	display: block;
 	position: absolute;
-	top: -8%;
-	left: 80%;
+	top: -40px;
+	right: -80px;
   }
 
 .button{
@@ -197,12 +192,22 @@ img[src="img/fast_buy.png"] {
 	font-size: 15px;
 	line-height: 32px;
 	color: #ffffff;
-	font-weight: 700;
 	text-transform: uppercase;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	position: relative;
 }
 
+
+
 .button span {
-	padding-left: 20px;
+	position: absolute;
+	top: 22px;
+	right: 30px;
+	background: url('../img/right.png') no-repeat transparent;
+	width: 18px;
+	height: 16px;
 }
 
 .button-little{
@@ -212,19 +217,29 @@ img[src="img/fast_buy.png"] {
 	background-color: #0089cf;
 	border-radius: 19px;
 }
+.button-little:hover {
+	background-color: #0050b4;
+}
 
 .button-add {
 	width: 195px;
-	height: 39px;
+	height: 40px;
 	margin-bottom: 10px;
 	border-radius: 19px;
-	font-size: 10px;
+	font-size: 12px;
+	line-height: 40px;
 	letter-spacing: 1px;
 	background-color: #e64327;
+}
+.button-add:hover {
+	background-color: #f38512;
 }
 
 .bg-blue {
 	background-color: #0089cf;
+}
+.bg-blue:hover {
+	background-color: #0050b4;
 }
 
 .p-text {
@@ -234,53 +249,82 @@ img[src="img/fast_buy.png"] {
 .button_orange{
 	background: linear-gradient(90deg, #e64327 0%, #ffc000 98%);
 }
-
+.button_orange:hover {
+	background-image: none;
+	background-color: #f38512;
+}
+.button_orange:active {
+	background-color: #e74726;
+}
 .button_blue{
 	background-image: linear-gradient(90deg, #0f2775 0%, #0051b5 50%, #02b3bb 100%);
 	width: 343px;
 }
 
+.button_blue:hover{
+	background-image: none;
+	background-color: #0050b4;
+}
+.button_blue:active {
+	background-color: #0f2775;
+}
+
 input {
 	width: 430px;
 	height: 45px;
+	font-size: 19px;
+	line-height: 45px;
 	padding: 0;
 	margin-left: 30px;
 	margin-bottom: 10px;
 	border-radius: 10px;
 	background-color: #ffffff;
+	background-image: linear-gradient(180deg, #dbe6f5 0%, #ffffff 100%);
 	box-sizing: border-box;
 	padding-left: 25px;
 	outline: none;
 	border: none;
+	font-family: "Roboto", Arial, sans-serif;
 }
 
 input::placeholder {
 	font-size: 17px;
-	line-height: 28px;
+	line-height: 45px;
 	color: #707070;
 	font-family: "Roboto", Arial, sans-serif;
+}
+
+input:focus {
+	border: 2px solid #feb902;
 }
 
 textarea {
 	width: 430px;
 	height: 90px;
 	padding: 15px;
+	font-size: 19px;
+	line-height: 20px;
 	margin-left: 30px;
 	margin-bottom: 10px;
 	border-radius: 10px;
 	background-color: #ffffff;
+	background-image: linear-gradient(180deg, #dbe6f5 0%, #ffffff 100%);
 	box-sizing: border-box;
 	padding-left: 25px;
 	outline: none;
 	border: none;
 	resize: none;
+	font-family: "Roboto", Arial, sans-serif;
 }
 
 textarea::placeholder {
 	font-size: 17px;
-	line-height: 21px;
+	line-height: 20px;
 	color: #707070;
 	font-family: "Roboto", Arial, sans-serif;
+}
+textarea:focus {
+	border: 2px solid #feb902;
 }
 
 .triggers {
@@ -310,7 +354,7 @@ textarea::placeholder {
 .trigger p:first-child {
 	width: 215px;
 	margin-bottom: 10px;
-	font-weight: bold;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
@@ -339,7 +383,7 @@ fieldset legend {
 
 fieldset legend p {
 	font-size: 19px;
-	font-weight: bold;
+	font-weight: 600;
 	color: #ffc000;
 	width: 280px;
 	height: 50px;
@@ -351,7 +395,8 @@ fieldset img {
 }
 
 fieldset button img{
-	width: 20px;
+	width: 18px;
+	height: 21px;
 	padding-right: 15px;
 }
 
@@ -428,7 +473,9 @@ fieldset button img{
 .fastbuy-text ul li span {
 	margin-top: 15px;
 	font-size: 19px;
-	line-height: 25px;
+	line-height: 30px;
+	font-weight: 300;
+	vertical-align: middle;
 }
 .fastbuy-text ul li  {
 	font-size: 30px;
@@ -514,7 +561,7 @@ fieldset button img{
 	width: 440px;
 	font-size: 19px;
 	line-height: 25px;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
@@ -537,7 +584,7 @@ fieldset button img{
 	font-size: 33px;
 	line-height: 47px;
 	color: #ffffff;
-	font-weight: 700;
+	font-weight: 600;
 	text-indent: 105px;
 }
 .discount-text {
@@ -597,7 +644,7 @@ fieldset button img{
 	font-size: 17px;
 	line-height: 27px;
 	padding-left: 0;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
@@ -669,7 +716,6 @@ fieldset button img{
 	height: 680px;
 	background: url('../img/bg_contacts.png') no-repeat transparent;
 	background-size: cover;
-	background-position: 100%;
 	margin-top: -160px;
 	padding: 170px 190px 170px 193px;
 	display: flex;
@@ -681,13 +727,15 @@ fieldset button img{
 .contacts-wrapper .big {
 	margin: 0;
 	padding: 0;
-	width: 649px;
+	margin-right: 5px;
+	width: 690px;
 	font-size: 33px;
 	letter-spacing: 2px;
 	line-height: 41px;
 	color: #0f2775;
-	font-weight: 700;
+	font-weight: 600;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .contacts-wrapper p {
@@ -711,6 +759,10 @@ fieldset button img{
 	bottom: 50px;
 	background: url('../img/go_top.png') no-repeat transparent;
 	z-index: 5;
+}
+
+.go_top:hover {
+	background: url('../img/go_top_hover.png') no-repeat transparent;
 }
 
 .crutch {
@@ -760,7 +812,7 @@ fieldset button img{
 	text-align: right;
 	font-size: 33px;
 	line-height: 32px;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .footer .button-little {
@@ -841,7 +893,6 @@ fieldset button img{
 	margin-top: ;
 	margin-bottom: 10px;
 	border-radius: 10px;
-	background-image: linear-gradient(180deg, #dbe6f5 0%, #ffffff 100%);
 	border: 2px solid #b2c6df;
 	box-sizing: border-box;
 	padding-left: 15px;
@@ -849,7 +900,7 @@ fieldset button img{
 }
 
 .popup-container input:hover, .popup-container input:active {
-	border: 1px solid #1dd3bd;
+	border: 2px solid #feb902;
 }
 
 .popup-container input:invalid:not(:placeholder-shown) {
@@ -900,7 +951,7 @@ fieldset button img{
 
 .close:hover {
 	cursor: pointer;
-	color: #1dd3bd;
+	color: #0089cf;
 	border-radius: 0;
 	-webkit-appearance: none;
 }
@@ -935,6 +986,8 @@ fieldset button img{
 	line-height: 12px;
 	color: rgb(231,22,54);	
 }
+
+
 
 
 
@@ -1115,11 +1168,11 @@ fieldset button img{
 	}
 
 	.contacts-wrapper {
-		background-position: 50% 50%;
+		background-position: 50% 0%;
 		
 	}
 	.contacts-wrapper .big {
-		width: 633px;
+		width: 658px;
 		
 	}
 	.go_top {
@@ -1238,22 +1291,25 @@ fieldset button img{
 	.button {
 		font-size: 12px;
 		letter-spacing: 1px;
-		line-height: 15px;
+		line-height: 17px;
 		width: 290px;
 		height: 49px;
 		border-radius: 24px;
 		margin-top: 0px;
 		margin-left: 5px;
-		padding: 0 20px 0 65px;
+		padding: 0 72px;
+	}
+	.button span {
+		padding-left: 0;
+		top: 16px;
+		right: 20px;
 	}
 	input {
 		width: 290px;
 		margin-left: 0;
 	}
 
-	.button span {
-			padding-left: 20px;
-	}
+	
 
 	img[src="img/fast_buy.png"] {
 		display: none;
@@ -1412,7 +1468,7 @@ fieldset button img{
 		margin-bottom: 0;
 	}
 	.discount .button {
-		padding: 0 15px 0 60px;
+		padding: 0 60px ;
 		margin-left: 0;
 	}
 	.discount .button-add {
@@ -1475,6 +1531,7 @@ fieldset button img{
 	}
 
 	.clients {
+		padding-top: 60px;
 		padding-bottom: 0;
 	}
 
@@ -1491,7 +1548,7 @@ fieldset button img{
 	.contacts {
 		background-color: #f7f9fd;
 		height: auto;
-		margin-top: 75px;
+		margin-top: 25px;
 		padding-bottom: 420px;
 	}
 	.contacts-wrapper {
@@ -1579,7 +1636,10 @@ fieldset button img{
 		-webkit-appearance: none;
 	}
 	
-
+	.garanties {
+		padding-top: 45px;
+		padding-bottom: 65px;
+	}
 
 	
 	
