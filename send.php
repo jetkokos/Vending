@@ -14,6 +14,7 @@
     $good_name = $_POST['good_name'];
     $good_quantity = $_POST['good_quantity'];
     $comment = $_POST['comment'];
+    
 	// Настройки
 	$mail = new PHPMailer;
 	try {
@@ -29,8 +30,8 @@
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('stepovichpe@belhard.com');		  		//My e-mail (Почта, откуда посылается письмо - могут быть одинаковыми)
-    $mail->addAddress('stepovichpe@belhard.com');            // Add a recipient (Почта, куда посылается письмо  - могут быть одинаковыми)
+    $mail->setFrom('MY_EMAIL');		  		//My e-mail (Почта, откуда посылается письмо - могут быть одинаковыми)
+    $mail->addAddress('MY_EMAIL');            // Add a recipient (Почта, куда посылается письмо  - могут быть одинаковыми)
     //$mail->addAddress('ellen@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
@@ -39,12 +40,22 @@
     //Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
     //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+    for ($ct = 0; $ct < count($_FILES['uploaded_file']['tmp_name']); $ct++) {
+        $uploadfile = tempnam(sys_get_temp_dir(), sha1($_FILES['uploaded_file']['name'][$ct]));
+        $filename = $_FILES['uploaded_file']['name'][$ct];
+        if (move_uploaded_file($_FILES['uploaded_file']['tmp_name'][$ct], $uploadfile)) {
+            $mail->addAttachment($uploadfile, $filename);
+        } else {
+            $msg .= 'Failed to move file to ' . $uploadfile;
+        }
+    }
+   
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Заявка с Молекулы';
-    $mail->Body = "Имя: $name <br> Телефон: $tel <br> E-mail: $e_mail <br> Название товара: $good_name <br> Количество товара: $good_quantity <br> Комментарий: $comment";
-    $mail->AltBody = "Имя: $name \r\n Телефон: $tel \r\n E-mail: $e_mail \r\n Название товара: $good_name \r\n Количество товара: $good_quantity \r\n Комментарий: $comment";
+    $mail->Subject = 'Заявка с сайта';
+    $mail->Body = "Имя: $name <br> Телефон: $tel <br> ";
+    $mail->AltBody = "Имя: $name \r\n Телефон: $tel \r\n";
     
 
     $mail->send();

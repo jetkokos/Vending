@@ -36,14 +36,14 @@
 						вендинговое оборудование, информационные киоски, комплектующие.</p>   
 					</div>
 					<div>
-						<form class="form">
+						<form class="form formCall">
 							<fieldset>
 								<legend> 
 									<p>Оставьте заявку прямо сейчас и она будет исполнена в&nbsp;течение суток!</p>
 								</legend>
-								<input type="text" name="name" placeholder="Введите ваше имя">
-								<input type="tel" name="tel" placeholder="Введите ваш номер телефона">
-								<button class="button button_orange callBack_ref">Оставить заявку на срочный выкуп <span></span></button>
+								<input class="input_check" type="text" name="name" placeholder="Введите ваше имя">
+								<input class="input_check" type="tel" name="tel" placeholder="Введите ваш номер телефона">
+								<button name="submit" class="button button_orange">Оставить заявку на срочный выкуп <span></span></button>
 								<img src="img/fast_buy.png" alt="fast_buy">
 							</fieldset>
 						</form>
@@ -103,16 +103,20 @@
 					<li><span>Разбитые и поврежденные</span></li>
 					<li><span>Терминалы с недостающими комплектующими</span></li>
 				</ul>
-				<form class="form">
+				<form class="form formCall" method="POST" enctype="multipart/form-data">
 						<fieldset>
 							<legend> 
 								<p>Оставьте заявку прямо сейчас и наши специалисты свяжутся с вами для уточнения деталей!</p>
 							</legend>
-							<textarea type="text" name="type" placeholder="Опишите вид терминала/оборудования, состояние, количество"></textarea>
-							<input type="text" name="name" placeholder="Введите ваше имя">
-							<input type="tel" name="tel" placeholder="Введите ваш номер телефона">
-							<button class="button button-add"><img src="img/paperclip.png" alt="paperclip">Прикрепить фото</button>
-							<button class="button button_blue callBack_ref">Оставить заявку на выкуп <span></span></button>
+							<textarea class="input_check" type="text" name="type" placeholder="Опишите вид терминала/оборудования, состояние, количество"></textarea>
+							<input class="input_check" type="text" name="name" placeholder="Введите ваше имя">
+							<input class="input_check" type="tel" name="tel" placeholder="Введите ваш номер телефона">
+							
+								
+								<input class="insert_files" type="file" name="uploaded_file[]" multiple="multiple"/>
+								<input type="hidden" name="MAX_FILE_SIZE" value="10000000"/>
+							
+							<button name="submit" class="button button_blue">Оставить заявку на выкуп <span></span></button>
 						</fieldset>
 					</form>
 			</div>
@@ -147,26 +151,26 @@
 					</div>
 					<div class="garlist right">
 						<div class="gar">
-								<img src="img/gar4.png" alt="gar4">
-								<div>
-									<p>100% гарантия сроков</p>
-									<p>Мы гарантируем соблюдение сроков на выкуп оборудования. Полная оплата поступит в оговоренный срок.</p>	
-								</div>
+							<img src="img/gar4.png" alt="gar4">
+							<div>
+								<p>100% гарантия сроков</p>
+								<p>Мы гарантируем соблюдение сроков на выкуп оборудования. Полная оплата поступит в оговоренный срок.</p>	
 							</div>
-							<div class="gar">
-								<img src="img/gar5.png" alt="gar5">
-								<div>
-								<p>100% неизменной цены</p>
-									<p>Мы гарантируем вам, что цена не изменится по факту получения оборудования!</p>
-								</div>
+						</div>
+						<div class="gar">
+							<img src="img/gar5.png" alt="gar5">
+							<div>
+							<p>100% неизменной цены</p>
+								<p>Мы гарантируем вам, что цена не изменится по факту получения оборудования!</p>
 							</div>
-							<div class="gar">
-								<img src="img/gar6.png" alt="gar6">
-								<div>
-									<p>100% оплаты</p>
-									<p>Мы гарантируем оплату на месте любым удобным для вас способом.</p>
-								</div>
+						</div>
+						<div class="gar">
+							<img src="img/gar6.png" alt="gar6">
+							<div>
+								<p>100% оплаты</p>
+								<p>Мы гарантируем оплату на месте любым удобным для вас способом.</p>
 							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -181,12 +185,17 @@
 					<h2>Продайте платежный терминал сегодня и <span class="yellow">получите скидку 10%</span>
 						на логистические услуги и накладные расходы при совершении сделки!
 					</h2>
-					<form class="form">
+					<form class="form farmCall">
 						<fieldset>
-							<input type="text" name="name" placeholder="Введите ваше имя">
-							<input type="tel" name="tel" placeholder="Введите ваш номер телефона">
-							<button class="button button-add bg-blue"><img src="img/paperclip.png" alt="paperclip">Прикрепить фото</button>
-							<button class="button button_orange callBack_ref">Получить скидку 10% на наши услуги <span></span></button>
+							<input class="input_check" type="text" name="name" placeholder="Введите ваше имя">
+							<input class="input_check" type="tel" name="tel" placeholder="Введите ваш номер телефона">
+							<label class="button button-add bg-blue">
+								<img src="img/paperclip.png" alt="paperclip">
+								<span>Прикрепить фото</span>	
+								<input type="file" name="uploaded_file" id="uploaded_file"/>
+								<input type="hidden" name="MAX_FILE_SIZE" value="10000000"/>
+							</label>
+							<button name="submit" class="button button_orange">Получить скидку 10% на наши услуги <span></span></button>
 						</fieldset>
 					</form>
 				</div>
@@ -267,9 +276,9 @@
 			<h6>Заказать</h6>
 			<h6>обратный звонок</h6>
 			<form class="form formCall">
-				<input type="text" name="name" placeholder="Ваше имя">
+				<input class="input_check" type="text" name="name" placeholder="Ваше имя">
 				<span class="form_warning"></span>
-				<input type="tel" name="tel" placeholder="+7 (___) ___-__-__">
+				<input class="input_check" type="tel" name="tel" placeholder="+7 (___) ___-__-__">
 				<span class="form_warning"></span>
 				<button name="submit" class="button button-gradient">Заказать обратный звонок</button>
 			</form>	
@@ -280,7 +289,7 @@
 		<div class="overlay"></div>
 		<div class="popup-container">
 			<button  class="close">&times;</button>
-			<p class="popup_little_text">Ваша заявка успешно отправлена.<br>Дождитесь звонка оператора.</p>	
+			<p class="popup_little_text little_bigger">Ваша заявка успешно отправлена.<br>Дождитесь звонка оператора.</p>	
 		</div>
 	</div>		
 		

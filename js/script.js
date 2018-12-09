@@ -37,10 +37,11 @@ $(document).on("click", 'a[href^="#nav"]', function() {
 //Отправка данных на почту
 
   $('.formCall').submit(function(event) {
+    event.preventDefault;
     var errors = false;
     $(this).find('span').empty();
 
-    $(this).find('input').each(function() {
+    $(this).find('.input_check').each(function() {
       if ($.trim( $(this).val() ) == '') {
         errors = true;
         $(this).css('border', '1px solid rgb(231,22,54)');
@@ -48,20 +49,27 @@ $(document).on("click", 'a[href^="#nav"]', function() {
       }
     });
     if (!errors) {
-      var data = $(this).serialize();
+      //var data = $(this).serialize(); // original
+       data = new FormData(this);
       $.ajax({
         url: 'send.php',
-        type: 'POST',
+        type: 'POST', 
         data: data,
+        cache: false,
+        contentType: false,
+        processData: false,     
         beforeSend: function() {
         },
         success: function() {
             $('.form').find('input').val('');
             $('.popup').removeClass('visible');
             $('.popupSuccessCall').addClass('visible');
+            
         },
         error: function() {
           console.log('Ошибка файла обработчика');
+          $('.form').find('input').val('');
+          $('.popup').removeClass('visible');
         }
 
       })

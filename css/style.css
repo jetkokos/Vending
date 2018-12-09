@@ -231,8 +231,22 @@ img[src="img/fast_buy.png"] {
 	letter-spacing: 1px;
 	background-color: #e64327;
 }
+
+input[type="file"]{
+}
+
 .button-add:hover {
 	background-color: #f38512;
+}
+.button-add span {
+	position: relative;
+	top: 0;
+	right: 0;
+    background: none;
+    width: auto;
+    height: auto;
+	padding-left: 15px;
+
 }
 
 .bg-blue {
@@ -956,21 +970,24 @@ fieldset button img{
 	-webkit-appearance: none;
 }
 .popup_little_text {
-	margin: 0;
-	margin-bottom: 15px;
+	margin: 0 115px 15px 115px;
 	padding: 0;
-	max-width: 365px;
+	max-width: 375px;
 	font-size: 13px;
 	line-height: 17px;
 }
 
-.popupSuccessDocs .popup_little_text {
-	margin-top: 75px;
-	text-align: center;
+.popupSuccessCall .popup-container {
+	padding: 75px 0;
 }
 .popupSuccessCall .popup_little_text {
-	margin-top: 75px;
+	margin-top: 15px;
 	text-align: center;
+}
+
+.popupSuccessCall .little_bigger {
+	font-size: 17px;
+	line-height: 23px;
 }
 
 .visible {
@@ -1199,6 +1216,10 @@ fieldset button img{
 
 	.footer .button-little {
 		margin-top: 20px;
+	}
+	.popup_little_text {
+		margin: 0 35px 15px 35px;
+		
 	}
 	
 
@@ -1623,6 +1644,7 @@ fieldset button img{
 		display: inline;
 	}
 	.popup_little_text {
+		margin: 0 5px 15px 5px;
 		
 	}
 	
