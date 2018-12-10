@@ -233,6 +233,7 @@ img[src="img/fast_buy.png"] {
 }
 
 input[type="file"]{
+	display: none;
 }
 
 .button-add:hover {

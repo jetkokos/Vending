@@ -34,6 +34,14 @@ $(document).on("click", 'a[href^="#nav"]', function() {
 });
 
 
+//Отображение прикрепленных файлов
+$(function(){
+  $('#files2').change(function(){
+    $('#upload_result').text($(this).val());
+  });
+});
+  
+
 //Отправка данных на почту
 
   $('.formCall').submit(function(event) {

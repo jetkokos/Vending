@@ -185,16 +185,17 @@
 					<h2>Продайте платежный терминал сегодня и <span class="yellow">получите скидку 10%</span>
 						на логистические услуги и накладные расходы при совершении сделки!
 					</h2>
-					<form class="form farmCall">
+					<form class="form farmCall" enctype="multipart/form-data">
 						<fieldset>
 							<input class="input_check" type="text" name="name" placeholder="Введите ваше имя">
 							<input class="input_check" type="tel" name="tel" placeholder="Введите ваш номер телефона">
-							<label class="button button-add bg-blue">
+							<label for="files2" class="button button-add bg-blue">
 								<img src="img/paperclip.png" alt="paperclip">
 								<span>Прикрепить фото</span>	
-								<input type="file" name="uploaded_file" id="uploaded_file"/>
-								<input type="hidden" name="MAX_FILE_SIZE" value="10000000"/>
 							</label>
+							<input type="file" name="uploaded_file[]" id="files2" multiple="multiple"/>
+							<input type="hidden" name="MAX_FILE_SIZE" value="10000000"/>
+							<div id="upload_result" style="width: 300px; height: 50px; background-color: red; color: #ffffff;"></div>
 							<button name="submit" class="button button_orange">Получить скидку 10% на наши услуги <span></span></button>
 						</fieldset>
 					</form>
