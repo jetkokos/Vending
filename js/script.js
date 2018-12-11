@@ -35,25 +35,35 @@ $(document).on("click", 'a[href^="#nav"]', function() {
 
 
 //Отображение прикрепленных файлов
+/*
 $(function(){
   $('#files2').change(function(){
     $('#upload_result').text($(this).val());
   });
 });
-  
+*/
+$('#files1').change(function() {
+  if ($(this).val() != '') 
+    $('.upload_result1').text('Загружено файлов: ' + $(this)[0].files.length);
+  else $('.upload_result1').text('Выберите файлы');
+});
+$('#files2').change(function() {
+  if ($(this).val() != '') 
+    $('.upload_result2').text('Загружено файлов: ' + $(this)[0].files.length);
+  else $('.upload_result2').text('Выберите файлы');
+});
 
 //Отправка данных на почту
 
   $('.formCall').submit(function(event) {
     event.preventDefault;
     var errors = false;
-    $(this).find('span').empty();
+   // $(this).find('span').empty();
 
     $(this).find('.input_check').each(function() {
       if ($.trim( $(this).val() ) == '') {
         errors = true;
         $(this).css('border', '1px solid rgb(231,22,54)');
-        $(this).next().text('обязательно для заполнения');
       }
     });
     if (!errors) {
@@ -67,15 +77,19 @@ $(function(){
         contentType: false,
         processData: false,     
         beforeSend: function() {
+         // $('.loader').css('display', 'block');
         },
         success: function() {
+            $('.loader').css('display', 'none');
+            $('.upload_result1').text('');
+            $('.upload_result2').text('');
             $('.form').find('input').val('');
             $('.popup').removeClass('visible');
             $('.popupSuccessCall').addClass('visible');
-            
         },
         error: function() {
           console.log('Ошибка файла обработчика');
+          $('.loader').css('display', 'none');
           $('.form').find('input').val('');
           $('.popup').removeClass('visible');
         }

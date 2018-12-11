@@ -1005,7 +1005,45 @@ fieldset button img{
 	color: rgb(231,22,54);	
 }
 
+/**/
+.input-style {
+	display: flex;
+	align-items: center;
+}
 
+.upload_result1, .upload_result2 {
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+/*Loader*/
+.loader {
+	display: none;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	width: 0;
+	padding: 15px;
+	background-image:
+	 radial-gradient(circle at 0% 0%, transparent 40%, rgb(0,255,0) 40%, rgb(0,255,0) 70%, transparent 70%),
+	 radial-gradient(circle at 100% 0%, transparent 40%, rgba(0,255,0,.2) 40%, rgba(0,255,0,.2) 70%, transparent 70%),
+	 radial-gradient(circle at 100% 100%, transparent 40%, rgba(0,255,0,.2) 40%, rgba(0,255,0,.2) 70%, transparent 70%),
+	 radial-gradient(circle at 0% 100%, transparent 40%, rgba(0,255,0,.2) 40%, rgba(0,255,0,.2) 70%, transparent 70%);
+	background-repeat: no-repeat;
+	background-size: 50% 50%;
+	background-position: 100% 100%, 0 100%, 0 0, 100% 0;
+	animation: loading1 linear .7s infinite;
+  }
+  @-webkit-keyframes loading1 {
+	100% {-webkit-transform: rotate(360deg);}
+  }
+  @keyframes loading1 {
+	100% {transform: rotate(360deg);}
+  }
 
 
 
@@ -1305,7 +1343,7 @@ fieldset button img{
 		padding-left: 5px;
 	}
 	.fastbuy fieldset input {
-		margin-left: 5px;
+		margin-left: 0;
 		width: 291px;
 		height: 37px;
 	}
@@ -1325,6 +1363,11 @@ fieldset button img{
 		padding-left: 0;
 		top: 16px;
 		right: 20px;
+	}
+	.button .label-add{
+		padding-left: 15px;
+		top: 0;
+		right: 0;
 	}
 	input {
 		width: 290px;
@@ -1424,7 +1467,6 @@ fieldset button img{
 
 	.fastbuy fieldset textarea {
 		width: 291px;
-		padding: 10px;
 		margin-left: 0;
 	}
 
@@ -1664,6 +1706,12 @@ fieldset button img{
 		padding-bottom: 65px;
 	}
 
+	.upload_result1, .upload_result2 {
+		margin-left: 5px;;
+		height: 31px;
+		font-size: 10px;
+		line-height: 32px;
+	}
 	
 	
 }

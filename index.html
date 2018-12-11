@@ -104,21 +104,27 @@
 					<li><span>Терминалы с недостающими комплектующими</span></li>
 				</ul>
 				<form class="form formCall" method="POST" enctype="multipart/form-data">
-						<fieldset>
-							<legend> 
-								<p>Оставьте заявку прямо сейчас и наши специалисты свяжутся с вами для уточнения деталей!</p>
-							</legend>
-							<textarea class="input_check" type="text" name="type" placeholder="Опишите вид терминала/оборудования, состояние, количество"></textarea>
-							<input class="input_check" type="text" name="name" placeholder="Введите ваше имя">
-							<input class="input_check" type="tel" name="tel" placeholder="Введите ваш номер телефона">
-							
-								
-								<input class="insert_files" type="file" name="uploaded_file[]" multiple="multiple"/>
-								<input type="hidden" name="MAX_FILE_SIZE" value="10000000"/>
-							
-							<button name="submit" class="button button_blue">Оставить заявку на выкуп <span></span></button>
-						</fieldset>
-					</form>
+					<fieldset>
+						<legend> 
+							<p>Оставьте заявку прямо сейчас и наши специалисты свяжутся с вами для уточнения деталей!</p>
+						</legend>
+						<textarea class="input_check" type="text" name="type" placeholder="Опишите вид терминала/оборудования, состояние, количество"></textarea>
+						<input class="input_check" type="text" name="name" placeholder="Введите ваше имя">
+						<input class="input_check" type="tel" name="tel" placeholder="Введите ваш номер телефона">
+						<div class="input-style">
+							<label for="files1" class="button button-add bg-red">
+								<img src="img/paperclip.png" alt="paperclip">
+								<span class="label-add">Прикрепить фото</span>
+							</label>
+							<div class="upload_result1"></div>
+							<div class="loader"></div>
+						</div>
+						<input type="file" name="uploaded_file[]" id="files1" multiple="multiple"/>
+						<input type="hidden" name="MAX_FILE_SIZE" value="10000000"/>
+						
+						<button name="submit" class="button button_blue">Оставить заявку на выкуп <span></span></button>
+					</fieldset>
+				</form>
 			</div>
 
 		</div>
@@ -185,20 +191,25 @@
 					<h2>Продайте платежный терминал сегодня и <span class="yellow">получите скидку 10%</span>
 						на логистические услуги и накладные расходы при совершении сделки!
 					</h2>
-					<form class="form farmCall" enctype="multipart/form-data">
+					<form class="form formCall" method="POST" enctype="multipart/form-data">
 						<fieldset>
 							<input class="input_check" type="text" name="name" placeholder="Введите ваше имя">
 							<input class="input_check" type="tel" name="tel" placeholder="Введите ваш номер телефона">
-							<label for="files2" class="button button-add bg-blue">
-								<img src="img/paperclip.png" alt="paperclip">
-								<span>Прикрепить фото</span>	
-							</label>
+							<div class="input-style">
+								<label for="files2" class="button button-add bg-blue">
+									<img src="img/paperclip.png" alt="paperclip">
+									<span class="label-add">Прикрепить фото</span>
+								</label>
+								<div class="upload_result2"></div>
+								<div class="loader"></div>
+							</div>
 							<input type="file" name="uploaded_file[]" id="files2" multiple="multiple"/>
 							<input type="hidden" name="MAX_FILE_SIZE" value="10000000"/>
-							<div id="upload_result" style="width: 300px; height: 50px; background-color: red; color: #ffffff;"></div>
 							<button name="submit" class="button button_orange">Получить скидку 10% на наши услуги <span></span></button>
 						</fieldset>
 					</form>
+					
+					
 				</div>
 			</div>
 		</div>
