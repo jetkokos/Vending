@@ -1609,11 +1609,11 @@
   animation-name: fadeInUp;
 }
 
-@-webkit-keyframes fadeInUpBig {
+@-webkit-keyframes fadeInUpCustom {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
   }
 
   to {
@@ -1623,11 +1623,11 @@
   }
 }
 
-@keyframes fadeInUpBig {
+@keyframes fadeInUpCustom{
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
   }
 
   to {
@@ -1637,9 +1637,9 @@
   }
 }
 
-.fadeInUpBig {
-  -webkit-animation-name: fadeInUpBig;
-  animation-name: fadeInUpBig;
+.fadeInUpCustom {
+  -webkit-animation-name: fadeInUpCustom;
+  animation-name: fadeInUpCustom;
 }
 
 @-webkit-keyframes fadeOut {

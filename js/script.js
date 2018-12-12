@@ -78,14 +78,19 @@ $('#files2').change(function() {
         processData: false,     
         beforeSend: function() {
          // $('.loader').css('display', 'block');
+        $('.upload_result1').text('');
+        $('.upload_result2').text('');
+         $('.form').find('input').val('');
+        $('.popup').removeClass('visible');
+        $('.popupSuccessCall').addClass('visible');
         },
         success: function() {
-            $('.loader').css('display', 'none');
-            $('.upload_result1').text('');
-            $('.upload_result2').text('');
-            $('.form').find('input').val('');
-            $('.popup').removeClass('visible');
-            $('.popupSuccessCall').addClass('visible');
+        //    $('.loader').css('display', 'none');
+        //    $('.upload_result1').text('');
+        //    $('.upload_result2').text('');
+        //    $('.form').find('input').val('');
+        //    $('.popup').removeClass('visible');
+        //    $('.popupSuccessCall').addClass('visible');
         },
         error: function() {
           console.log('Ошибка файла обработчика');

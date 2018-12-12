@@ -396,7 +396,9 @@ fieldset legend {
 	padding-right: 10px;
 }
 
-fieldset legend p {
+fieldset legend span {
+	display: block;
+	margin-left: 30px;
 	font-size: 19px;
 	font-weight: 600;
 	color: #ffc000;
@@ -503,10 +505,10 @@ fieldset button img{
 	border-color: #0f2775;
 }
 
-.fastbuy fieldset legend p{
+.fastbuy fieldset legend span{
+	display: block;
 	width: 472px;
 	margin-top: -5px;
-	padding-left: 15px;
 	color: #000000;
 }
 
@@ -1108,9 +1110,9 @@ fieldset button img{
 		
 	}
 	.triggers {
-		padding: 0;
+		padding: 0 ;
 		flex-direction: column;
-		margin-top: 55px;
+		margin-top: 20px;
 		align-items: center;
 	}
 	.trigger {
@@ -1711,6 +1713,15 @@ fieldset button img{
 		height: 31px;
 		font-size: 10px;
 		line-height: 32px;
+	}
+
+	fieldset legend span {
+		margin-left: 0;
+		margin-bottom: 5px;
+	}
+
+	.fastbuy fieldset legend span{
+		width: 300px;
 	}
 	
 	
