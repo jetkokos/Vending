@@ -701,7 +701,7 @@ fieldset button img{
 }
 
 .clients {
-	padding: 120px 0 310px;
+	padding: 120px 0 200px;
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
@@ -714,9 +714,10 @@ fieldset button img{
 .logos {
 	width: 1060px;
 	height: 300px;
-	margin-top: 60px;
-	background: url('../img/clients1920.png') no-repeat transparent;
-	background-size: cover;
+	margin-top: 30px;
+	background: url('../img/clients_desk.jpg') no-repeat transparent;
+	background-position: 50%;
+	background-size: inherit;
 }
 
 .contacts {
@@ -1061,10 +1062,26 @@ fieldset button img{
 	
 }
 
+
+@media screen and (max-width: 1024px) {
+	.logos {
+
+		width: 300px;
+		background: url('../img/clients_mob.jpg') no-repeat transparent;
+		background-position: center;
+	}	
+	
+}
+
+
+
 @media screen and (max-width: 1270px)  {
 	.first-screen {
 	background: url('../img/bg_main750.png') no-repeat transparent;
 	background-position: 50% -10%;
+	}
+	.logo {
+		padding-left: 15px;
 	}
 
 	.nav-itm {
@@ -1220,10 +1237,7 @@ fieldset button img{
 	.letter3 {
 		display: none;
 	}
-	.logos {
-		width: 720px;
-		background: url('../img/clients750.png') no-repeat transparent;
-	}
+	
 
 	.contacts-wrapper {
 		background-position: 50% 0%;
@@ -1606,10 +1620,7 @@ fieldset button img{
 		margin-top: 30px;
 		text-align: center;
 	}
-	.logos {
-		width: 290px;
-		background: url('../img/clients320.png') no-repeat transparent;
-	}
+
 
 	.contacts {
 		background-color: #f7f9fd;
