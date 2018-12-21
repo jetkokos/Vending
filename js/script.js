@@ -24,6 +24,12 @@ $(document).ready(function(){
       }
     });
 
+
+/*Маска ввода телефона */
+$(function(){
+  $("input[type='tel']").mask("+7(999) 999-9999");
+});
+
 /*Плавный переход к якорям*/
 $(document).on("click", 'a[href^="#nav"]', function() {
   var el = $(this).attr('href');
