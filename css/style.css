@@ -1282,7 +1282,7 @@ fieldset button img{
 	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
   }
 
-  input[type=text], input[type=submit], textarea{
+  input[type=text], input[type=tel], textarea{
 	-webkit-appearance: none;
 } 
 
@@ -1933,9 +1933,9 @@ fieldset button img{
 
 	.contacts {
 		background-color: #f7f9fd;
-		height: auto;
+		/*height: auto;*/
 		margin-top: 25px;
-		padding-bottom: 420px;
+		/*padding-bottom: 420px;*/
 	}
 	.contacts-wrapper {
 		height: auto;
