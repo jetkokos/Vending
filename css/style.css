@@ -900,6 +900,7 @@ fieldset button img{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	justify-items: flex-start;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
@@ -1939,6 +1940,7 @@ fieldset button img{
 	}
 	.contacts-wrapper {
 		height: auto;
+		max-width: 300px;
 		background: none;
 		background-color: #f7f9fd;
 		padding: 45px 15px 45px 15px;
