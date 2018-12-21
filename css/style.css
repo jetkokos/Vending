@@ -367,23 +367,24 @@ input {
 	font-family: "Roboto", Arial, sans-serif;
 }
 
+
 input::-webkit-input-placeholder {
 	font-size: 17px;
-	line-height: 45px;
+	line-height: 100%;
 	color: #707070;
 	font-family: "Roboto", Arial, sans-serif;
 }
 
 input:-ms-input-placeholder {
 	font-size: 17px;
-	line-height: 45px;
+	line-height: 100%;
 	color: #707070;
 	font-family: "Roboto", Arial, sans-serif;
 }
 
 input::placeholder {
 	font-size: 17px;
-	line-height: 45px;
+	line-height: 100%;
 	color: #707070;
 	font-family: "Roboto", Arial, sans-serif;
 }
