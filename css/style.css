@@ -1941,7 +1941,7 @@ fieldset button img{
 
 
 	.contacts {
-		display: none;
+		display: none !important;
 		
 	}
 	.contacts320 {
