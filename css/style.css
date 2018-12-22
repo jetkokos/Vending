@@ -1941,20 +1941,16 @@ fieldset button img{
 
 
 	.contacts {
-		background-color: #f7f9fd;
-		margin-top: 25px;
-		padding-bottom: 250px;
-		flex-direction: column;
-		align-items: center;
 		display: none;
+		
 	}
 	.contacts320 {
+		display: flex;
 		background-color: #f7f9fd;
 		padding: 0;
 		margin: 0;
 		height: 520px;
 		width: auto;
-		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
