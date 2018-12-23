@@ -1286,11 +1286,11 @@ fieldset button img{
 @keyframes loading1 {
 	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
 }
-
+/*
 input[type=text], input[type=tel], textarea{
 	-webkit-appearance: none;
 } 
-
+*/
 
 /*_____________________MEDIA_____________________________________________________________________________*/
 /*_______________________________________________________________________________________________________*/
@@ -1886,8 +1886,7 @@ input[type=text], input[type=tel], textarea{
 	.discount fieldset input {
 		width: 290px;
 		height: 37px;
-		line-height: normal;
-		line-height: 45px;
+		line-height: 37px;
 		margin-left: 0;
 	}
 	.discount10 {
