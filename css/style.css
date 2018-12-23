@@ -66,7 +66,7 @@ h1 span:first-child {
 	background-color: #ffc000;
 	margin-top: 0px;
 }
-  
+
 h2 {
 	display: block;
 	position: relative;
@@ -1270,32 +1270,30 @@ fieldset button img{
 	width: 0;
 	padding: 15px;
 	background-image:
-	 radial-gradient(circle at 0% 0%, transparent 40%, rgb(0,255,0) 40%, rgb(0,255,0) 70%, transparent 70%),
-	 radial-gradient(circle at 100% 0%, transparent 40%, rgba(0,255,0,.2) 40%, rgba(0,255,0,.2) 70%, transparent 70%),
-	 radial-gradient(circle at 100% 100%, transparent 40%, rgba(0,255,0,.2) 40%, rgba(0,255,0,.2) 70%, transparent 70%),
-	 radial-gradient(circle at 0% 100%, transparent 40%, rgba(0,255,0,.2) 40%, rgba(0,255,0,.2) 70%, transparent 70%);
+	radial-gradient(circle at 0% 0%, transparent 40%, rgb(0,255,0) 40%, rgb(0,255,0) 70%, transparent 70%),
+	radial-gradient(circle at 100% 0%, transparent 40%, rgba(0,255,0,.2) 40%, rgba(0,255,0,.2) 70%, transparent 70%),
+	radial-gradient(circle at 100% 100%, transparent 40%, rgba(0,255,0,.2) 40%, rgba(0,255,0,.2) 70%, transparent 70%),
+	radial-gradient(circle at 0% 100%, transparent 40%, rgba(0,255,0,.2) 40%, rgba(0,255,0,.2) 70%, transparent 70%);
 	background-repeat: no-repeat;
 	background-size: 50% 50%;
 	background-position: 100% 100%, 0 100%, 0 0, 100% 0;
 	-webkit-animation: loading1 linear .7s infinite;
 	        animation: loading1 linear .7s infinite;
-  }
-  @-webkit-keyframes loading1 {
+}
+@-webkit-keyframes loading1 {
 	100% {-webkit-transform: rotate(360deg);}
-  }
-  @keyframes loading1 {
+}
+@keyframes loading1 {
 	100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
-  }
+}
 
-  input[type=text], input[type=tel], textarea{
+input[type=text], input[type=tel], textarea{
 	-webkit-appearance: none;
 } 
 
 
 /*_____________________MEDIA_____________________________________________________________________________*/
 /*_______________________________________________________________________________________________________*/
-
-
 
 @media screen and (max-width: 1366px) {
 	.first-screen {
@@ -1307,16 +1305,11 @@ fieldset button img{
 
 @media screen and (max-width: 1024px) {
 	.logos {
-
 		width: 300px;
 		background: url('../img/clients_mob.jpg') no-repeat transparent;
 		background-position: center;
 	}	
-	
 }
-
-
-
 @media screen and (max-width: 1270px)  {
 	.first-screen {
 	background: url('../img/bg_main750.png') no-repeat transparent;
@@ -1571,7 +1564,6 @@ fieldset button img{
 		margin: 0 35px 15px 35px;
 		
 	}
-	
 
 }	
 
@@ -1939,8 +1931,11 @@ fieldset button img{
 		text-align: center;
 	}
 
-
 	.contacts {
+		padding: 0;
+		margin: 0;
+		height: 0;
+		opacity: 0;
 		display: none !important;
 		
 	}
@@ -2072,8 +2067,6 @@ fieldset button img{
 	.fastbuy fieldset legend span{
 		width: 300px;
 	}
-	
-	
 }
 	
 	
