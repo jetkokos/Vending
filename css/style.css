@@ -1654,6 +1654,13 @@ input[type=text], input[type=tel], textarea{
 		height: 37px;
 		line-height: 37px;
 	}
+
+	.fastbuy fieldset input {
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 37px;
+		line-height: 37px;
+	}
 	
 	.button {
 		font-size: 12px;
@@ -1888,6 +1895,11 @@ input[type=text], input[type=tel], textarea{
 		height: 37px;
 		line-height: 37px;
 		margin-left: 0;
+	}
+	.discount fieldset input::placeholder {
+		padding: 0;
+		height: 37px;
+		line-height: 37px;
 	}
 	.discount10 {
 		position: absolute;
