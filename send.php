@@ -22,16 +22,16 @@
     $mail->SMTPDebug = 1;
     $mail->CharSet = "utf-8";                             // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'SMTP_SERVER_OF_YOUR_EMAIL';  		  // Specify main and backup SMTP servers (SMTP сервер почты, откуда посылается письмо, например - "smtp.yandex.ru")
+    $mail->Host = 'mail.vend-torg.ru';  		  // Specify main and backup SMTP servers (SMTP сервер почты, откуда посылается письмо, например - "smtp.yandex.ru")
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'USERNAME_OF_YOU_EMAIL';        	  // SMTP username (Логин почты, откуда посылается письмо)
-    $mail->Password = 'PASSWORD_OF_YOUR_EMAIL';           // SMTP password (Пароль почты, откуда посылается письмо)
+    $mail->Username = 'info@vend-torg.ru';        	  // SMTP username (Логин почты, откуда посылается письмо)
+    $mail->Password = 'githublol';           // SMTP password (Пароль почты, откуда посылается письмо)
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('MY_EMAIL');		  		//My e-mail (Почта, откуда посылается письмо - могут быть одинаковыми)
-    $mail->addAddress('MY_EMAIL');            // Add a recipient (Почта, куда посылается письмо  - могут быть одинаковыми)
+    $mail->setFrom('info@vend-torg.ru');		  		//My e-mail (Почта, откуда посылается письмо - могут быть одинаковыми)
+    $mail->addAddress('info@vend-torg.ru');            // Add a recipient (Почта, куда посылается письмо  - могут быть одинаковыми)
     //$mail->addAddress('ellen@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
