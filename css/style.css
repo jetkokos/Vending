@@ -1323,6 +1323,82 @@ input[type=text], input[type=tel], textarea{
 } 
 */
 
+
+.more_conts {
+	background-image: linear-gradient(56deg, #0f2775 0%, #0051b5 50%, #01b3bb 100%);
+	padding: 100px 15px;
+}
+.more_conts h2{
+	margin-bottom: 40px;
+	margin-left: 0px;
+}
+
+.more_conts-add {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.more_conts-wrapper {
+	width: 100%;
+	max-width: 1150px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.more_conts-little {
+	font-size: 13px;
+	line-height: 32px;
+	font-weight: 400;
+	text-align: right;
+}
+
+.more_conts a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.more_conts p{
+	padding-left: 0;;
+}
+
+.more_conts .fs17 {
+	font-size: 17px;
+	line-height: 32px;
+}
+
+.more_conts .fs21 {
+	font-size: 21px;
+	line-height: 27px;
+	font-weight: 700;
+}
+
+.more_conts .icon {
+	display: inline-block;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	margin-bottom: -9px;
+}
+
+.more_conts .icon-phone {
+	background-image: url('../img/icon-phone.png');
+	width: 21px;
+	height: 22px;
+}
+
+.more_conts .icon-mail {
+	background-image: url('../img/icon-mail.png');
+	width: 27px;
+	height: 28px;
+}
+
+.more_conts .icon-adress {
+	background-image: url('../img/icon-adress.png');
+	width: 21px;
+	height: 29px;
+}
+
+
 /*_____________________MEDIA_____________________________________________________________________________*/
 /*_______________________________________________________________________________________________________*/
 
@@ -1330,9 +1406,7 @@ input[type=text], input[type=tel], textarea{
 	.first-screen {
 		background-position: 60%;
 	}
-	
-}
-
+	}
 
 @media screen and (max-width: 1024px) {
 	.logos {
@@ -1340,6 +1414,52 @@ input[type=text], input[type=tel], textarea{
 		background: url('../img/clients_mob.jpg') no-repeat transparent;
 		background-position: center;
 	}	
+	.more_conts {
+	padding: 50px 15px;
+	}
+	.more_conts h2{
+		margin: 0 auto 15px;
+	}
+	.more_conts p{
+		margin-bottom: 10px;
+	}
+	
+	.more_conts-add {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	
+	
+	.more_conts-wrapper {
+		
+	}
+	.more_conts-block {
+		margin-bottom: 15px;
+	}
+	
+	.more_conts-little {
+		font-size: 9px;
+		line-height: 15px;
+	}
+	
+	.more_conts .fs17 {
+		font-size: 13px;
+		line-height: 21px;
+	}
+	
+	.more_conts .fs21 {
+		font-size: 15px;
+		line-height: 21px;
+	}
+	
+	.more_conts .icon {
+		margin-right: 5px;
+		background-repeat: no-repeat;
+		margin-bottom: -9px;
+	}
+	
 }
 @media screen and (max-width: 1270px)  {
 	.first-screen {
